@@ -60,23 +60,9 @@ Do testów jednostkowych wykorzystano `pytest`. Sprawdzane scenariusze obejmują
 
 ## 6. Rezultaty i mechanizm wznawiania
 
-Wykryto **727 unikalnych adresów CSV**; proces pobierania został zakończony z kompletem plików według relacji z uruchomienia. Program zapisuje status każdej operacji:
 
-- `DOWNLOADED` — pobrano plik w danym uruchomieniu;
-- `SKIPPED` — istniejący plik przeszedł weryfikację integralności;
-- `FAILED` — nie udało się wykonać operacji.
+![Schemat raportu demonstracyjnego](screenshots/screenshot2.png)
 
-![Schemat raportu demonstracyjnego](screenshots/03-results.svg)
-
-**Uwaga:** ilustracja przedstawia planowany scenariusz demonstracyjny: jeden brakujący plik zostaje pobrany, a 726 istniejących plików zostaje pominiętych. **Nie jest to jeszcze potwierdzony wynik konkretnego uruchomienia.** Po wykonaniu demonstracji należy wpisać poniżej rzeczywiste liczby:
-
-| Wskaźnik | Rzeczywisty wynik demonstracji |
-|---|---:|
-| Przetworzone zasoby | _do uzupełnienia_ |
-| Nowo pobrane | _do uzupełnienia_ |
-| Pominięte | _do uzupełnienia_ |
-| Nieudane | _do uzupełnienia_ |
-| Czas wykonania | _do uzupełnienia, jeśli zmierzono_ |
 
 ## 7. Technologie
 

@@ -18,8 +18,6 @@ Celem było stworzenie narzędzia, które samodzielnie wykrywa dostępne pliki, 
 
 ## 3. Rozwiązanie
 
-![Cztery etapy automatyzacji](screenshots/screenshot2.png)
-
 **Etap 1 — skanowanie.** Program analizuje strony, wyszukuje odnośniki do CSV, normalizuje adresy i usuwa duplikaty.
 
 **Etap 2 — manifest JSON.** Zidentyfikowane zasoby są opisywane metadanymi: kategorią, rozgrywkami, sezonem (jeśli można go ustalić), nazwą pliku oraz lokalizacją źródłową. Manifest jest zapisywany lokalnie. **Rzeczywiste adresy URL nie są publikowane.**
@@ -90,4 +88,31 @@ Projekt pokazuje praktyczne wykorzystanie automatyzacji do ograniczenia ręcznej
 
 ---
 
-**Zakres publikacji:** wyłącznie opis rozwiązania i neutralne schematy. Kod, rzeczywisty manifest, pobrane pliki i informacje umożliwiające identyfikację źródła nie są udostępniane.
+## 9. Praktyczne wykorzystanie danych — analiza historycznych wyników
+
+Zgromadzone dane mogą być wykorzystywane nie tylko do archiwizacji, ale również do dalszej analizy statystycznej. Przykładem jest opracowany przeze mnie moduł analizujący tzw. **łamaki (HT/FT)**, czyli spotkania, w których drużyna przegrywająca do przerwy ostatecznie wygrywa mecz.
+
+Moduł umożliwia wyszukiwanie historycznych wyników, analizowanie ich rozkładu w poszczególnych miesiącach oraz identyfikowanie zespołów, u których takie zdarzenia występowały w tym samym miesiącu w różnych latach.
+
+### 1. Analiza powtarzalności w miesiącach
+
+![Filtrowanie historycznych wyników według miesiąca](screenshots/screenshot01.png)
+
+Możliwość filtrowania danych według miesiąca i wyszukiwania zespołów, dla których określony wzorzec występował w co najmniej dwóch różnych latach.
+
+### 2. Wyszukiwanie i analiza konkretnego zespołu
+
+![Analiza historycznych łamaków Realu Madryt](screenshots/screenshot02.png)
+
+Wyszukiwanie klubu i zestawianie miesięcy, w których odnotowano historyczne przypadki odwrócenia wyniku meczu. Tabela przedstawia lata wystąpienia wzorca oraz liczbę zarejestrowanych zdarzeń.
+
+### 3. Weryfikacja wyników na poziomie pojedynczych spotkań
+
+![Szczegółowa lista historycznych spotkań](screenshots/screenshot03.png)
+
+Po wybraniu interesującego zestawienia możliwy jest podgląd konkretnych meczów wraz z datą, rozgrywkami, uczestniczącymi drużynami, wynikiem do przerwy (HT), wynikiem końcowym (FT) oraz typem odwrócenia wyniku (1/2 lub 2/1).
+
+Rozwiązanie prezentuje praktyczne zastosowanie przetwarzania danych historycznych, filtrowania wielokryterialnego, agregacji wyników oraz tworzenia interaktywnych zestawień analitycznych.
+
+*Przedstawione wzorce mają charakter opisowy i nie stanowią potwierdzenia przewidywalności przyszłych wyników sportowych.*
+

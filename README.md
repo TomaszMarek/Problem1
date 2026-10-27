@@ -8,7 +8,7 @@
 
 Historyczne dane sportowe były rozproszone pomiędzy wieloma stronami, kategoriami rozgrywek i sezonami. Ręczne zebranie plików CSV oznaczałoby powtarzalne otwieranie stron, wyszukiwanie odnośników, zapisywanie plików i kontrolowanie, które zasoby zostały już pobrane.
 
-![Schemat problemu: 27 stron i 727 zasobów](screenshots/01-problem.svg)
+![Schemat problemu: 27 stron i 727 zasobów](screenshots/screenshot1.png)
 
 W pierwszym etapie program przeanalizował **27 stron źródłowych** i wykrył **727 unikalnych adresów plików CSV**. Wszystkie 27 stron zostało przetworzonych bez błędu skanowania. Liczby dotyczą wykrytych odnośników, a nie liczby rekordów wewnątrz plików.
 
@@ -18,7 +18,7 @@ Celem było stworzenie narzędzia, które samodzielnie wykrywa dostępne pliki, 
 
 ## 3. Rozwiązanie
 
-![Cztery etapy automatyzacji](screenshots/02-process.svg)
+![Cztery etapy automatyzacji](screenshots/screenshot2.png)
 
 **Etap 1 — skanowanie.** Program analizuje strony, wyszukuje odnośniki do CSV, normalizuje adresy i usuwa duplikaty.
 
@@ -57,7 +57,8 @@ Do testów jednostkowych wykorzystano `pytest`. Sprawdzane scenariusze obejmują
 | Przekierowanie tworzy pętlę | Wykrycie pętli |
 | Nazwa zawiera polskie znaki | Zachowanie znaków Unicode |
 
-**Rzeczywisty wynik testów:** _[uzupełnić liczbę testów po ostatnim uruchomieniu `python -m pytest -v`]._ Nie zamieszczono fikcyjnego logu testów.
+**Rzeczywisty wynik testów:**
+![](screenshots/screenshot3.png)
 
 ## 6. Rezultaty i mechanizm wznawiania
 

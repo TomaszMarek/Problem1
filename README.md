@@ -58,23 +58,25 @@ Do testów jednostkowych wykorzystano `pytest`. Sprawdzane scenariusze obejmują
 **Rzeczywisty wynik testów:**
 ![](screenshots/screenshot3.png)
 
-## 6. Rezultaty i mechanizm wznawiania
-
+## 6. Rezultaty
 
 ![Schemat raportu demonstracyjnego](screenshots/screenshot2.png)
 
+**[Zobacz przykładowy raport PDF](reports/raport01.pdf)**
 
-## 7. Technologie
+## 7. Organizacja pobranych danych
 
-`Python` · `Requests` · `BeautifulSoup4` · `CSV` · `JSON` · `SHA-256` · `pytest`
+Pobrane pliki CSV są automatycznie zapisywane w uporządkowanej strukturze katalogów, z podziałem na kraje i rozgrywki. Pozwala to łatwo odnaleźć dane historyczne bez konieczności ręcznego sortowania plików.
 
-## 8. Wnioski
+**Podział archiwum według krajów**
 
-Projekt pokazuje praktyczne wykorzystanie automatyzacji do ograniczenia ręcznej, powtarzalnej pracy z danymi. Kluczowe było nie tylko pobranie zasobów, ale też zapewnienie możliwości wznowienia procesu, weryfikacji plików i udokumentowania rezultatów. Tak przygotowane dane mogą być następnie wykorzystane w analizach, m.in. w Excelu lub Power Query.
+![Struktura archiwum według krajów](screenshots/screenshot08.png)
 
----
+**Przykładowe archiwum rozgrywek League Two**
 
-## 9. Praktyczne wykorzystanie danych — analiza historycznych wyników
+![Historyczne pliki CSV dla League Two](screenshots/screenshot09.png)
+
+## 8. Praktyczne wykorzystanie danych (analiza historycznych wyników)
 
 Zgromadzone dane mogą być wykorzystywane nie tylko do archiwizacji, ale również do dalszej analizy statystycznej. Przykładem jest opracowany przeze mnie moduł analizujący tzw. **łamaki (HT/FT)**, czyli spotkania, w których drużyna przegrywająca do przerwy ostatecznie wygrywa mecz.
 
